@@ -20,7 +20,7 @@ history_data = [
 chat_prompt_text = chat_prompt.invoke({"history": history_data}).to_string()
 # print(chat_prompt_text)
 
-model = ChatTongyi(model="qwen3-max")
+model = ChatTongyi(model="qwen-max")
 
 res = model.invoke(chat_prompt_text)
 print(res.content, type(res))
